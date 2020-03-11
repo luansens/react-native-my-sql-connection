@@ -2,22 +2,26 @@
   "name": "react-native-my-sql-connection",
   "title": "React Native My Sql Connection",
   "version": "1.0.1",
-  "description": "TODO",
+  "description": "Simple way to connect direct from react-native and execute SELECT, UPDATE and DELETE commands for MySql database(only for Android for now), dont use this to connect a remote database outside your LAN network",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-my-sql-connection.git",
-    "baseUrl": "https://github.com/github_account/react-native-my-sql-connection"
+    "url": "https://github.com/Luan-Sens/react-native-my-sql-connection.git",
+    "baseUrl": "https://github.com/Luan-Sens/react-native-my-sql-connection.git"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "mysql",
+    "database",
+    "connection",
+    "in-lan"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Luan David Sensolo",
+    "email": "luansenss12@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
