@@ -38,10 +38,12 @@ public class MySqlConnectionModule extends ReactContextBaseJavaModule {
         configuration.setUser(config.getString("user"));
         configuration.setPassword(config.getString("password"));
         if(config.hasKey("params")){
-            configuration.setParams(config.getString("params"));
+            if(!config.isNull("params"))
+                configuration.setParams(config.getString("params"));
         }
         if(config.hasKey("port")){
-            configuration.setPort(config.getInt("port"));
+            if(config.isNull("port"))
+                configuration.setPort(config.getInt("port"));
         }
         return configuration;
     }
@@ -58,7 +60,7 @@ public class MySqlConnectionModule extends ReactContextBaseJavaModule {
             Class.forName("com.mysql.jdbc.Driver");
             Connection conn = DriverManager.getConnection(
                 configuration.BuildConnection(),
-                configuration.getUser(), 
+                configuration.getUser(),
                 configuration.getPassword());
             this.connection = conn;
             promise.resolve(null);
