@@ -1,7 +1,7 @@
 {
   "name": "react-native-my-sql-connection",
   "title": "React Native My Sql Connection",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple way to connect direct from react-native and execute SELECT, UPDATE and DELETE commands for MySql database(only for Android for now), dont use this to connect a remote database outside your LAN network",
   "main": "index.js",
   "scripts": {
