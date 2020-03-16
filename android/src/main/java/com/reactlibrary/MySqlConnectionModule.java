@@ -42,7 +42,7 @@ public class MySqlConnectionModule extends ReactContextBaseJavaModule {
                 configuration.setParams(config.getString("params"));
         }
         if(config.hasKey("port")){
-            if(config.isNull("port"))
+            if(!config.isNull("port"))
                 configuration.setPort(config.getInt("port"));
         }
         return configuration;
